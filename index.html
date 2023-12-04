@@ -1,0 +1,110 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5 - Login Form</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <style>
+      :root{
+  --main-bg:#1D92C7;
+}
+body{
+    font-family: Raleway, sans-serif;
+}
+.main-bg {
+  background: var(--main-bg) !important;
+}
+input {
+            width: calc(100% - 16px);
+            padding: 8px;
+            font-family: 'Raleway', sans-serif; 
+            box-sizing: border-box;
+            background: transparent;
+            border-radius: 5px;
+            border: 1px solid rgba(30, 30, 30, 0.80);
+        }
+
+button{
+    background-color: #1D92C7;
+}
+
+.card, .btn{
+  border-radius: 26px !important;
+}
+.btn{
+  border-radius: 8px !important;
+}
+.logo-container {
+  display: inline-block; /* Ensure the container only takes as much width as necessary */
+  width: 15%; /* Set the width to half of the card title */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  border-radius: 8px; /* Add border radius */
+  overflow: hidden; /* Hide any overflow content */
+  margin-top: 45px;
+}
+
+.logo-img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+}
+
+h2 {
+    font-size: 25px;
+}
+label{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+  </style>
+</head>
+
+<body class="main-bg">
+  <!-- Login Form -->
+  <div class="container">
+    <div class="row justify-content-center mt-5 mb-5">
+      <div class="col-lg-5 col-md-12 col-sm-10">
+        <div class="card shadow mx-auto my-auto">
+          <div class="card-title text-center">
+            <div class="logo-container">
+            <img src="images/logo-without-text.png" alt="Dent-Click Logo" class="logo-img" />
+            </div>
+            <h2 class="p-4">Welcome to Dent-Click</h2>
+          </div>
+          <div class="card-body mx-5">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" />
+              </div>
+              <div class="mb-2">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password" />
+              </div>
+              <div class="mt-1 mb-4 text-end" style="font-size: 15px";> <!-- Added text-end class for right alignment -->
+      <a href="#">Forgot Password?</a>
+    </div>
+              <div class="d-grid">
+                <button type="submit" class="btn text-light main-bg fw-bold" style="background-color: #1D92C7";>Login</button>
+              </div>
+              <div class="mt-3 text-center">
+  <p class="text-muted" style="font-size: 15px";>Not yet registered? <a href="#">Create Account</a></p>
+</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

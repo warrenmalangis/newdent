@@ -1,0 +1,239 @@
+/*
+FONTS
+Main Font - font-family: 'Raleway', sans-serif;
+Sub Font - font-family: 'Bitter', serif;
+
+*/
+
+* {
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 17px;
+	color: #1E1E1E;
+	font-family: 'Raleway', sans-serif;
+	overflow: hidden;
+}
+
+.image-container {
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	width: 100%;
+  	height: 100vh;
+
+}
+
+.container {
+	width: 100%;
+  	height: 100vh;
+  	display: flex;
+}
+.box-1, .white-box{
+	position: absolute;
+	top: 0;
+}
+
+.box-1 {
+	height: 100%;
+	width: 47%;
+	flex: 1;
+}
+
+.white-box {
+	margin-left: 45%;
+	margin-top: 15%;
+	width: 73px;
+	height: 69px;
+	flex-shrink: 0;
+	border-radius: 16px;
+	border: 1.5px solid #F1F1F1;
+	background: #FFF;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.heading {
+	font-family: 'Bitter', serif;
+	font-size: 32px;
+	font-weight: 500;
+	/*border: 1px solid black;*/
+	width: 350px;
+	text-align: center;
+	margin: auto;
+	margin-top: 200px;
+	margin-bottom: 30px;
+	line-height: 50px;
+}
+.sub-heading {
+	color: #146C94;
+}
+.button {
+	font-size: 18px;
+	font-weight: 500;
+	color: #393939;
+	font-family: 'Raleway', sans-serif;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 173px;
+	height: 144px;
+	border-radius: 10px;
+	border: 2px solid #9E9E9E;
+	background: none;
+	transition: 0.3s;
+}
+#patient-text {
+	padding-top: 5px;
+}
+.reg-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 370px;
+/*	border: 1px solid black;*/
+	margin: auto;
+}
+.button-link {
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button:hover {
+	background: rgba(27, 142, 193, 0.06);
+	border: 3px solid #1B8EC1;
+}
+
+.button.selected {
+	background-color: white;
+	border: 3px solid #1B8EC1;
+	cursor: pointer;
+	color: black;
+	font-weight: 600;
+}
+
+.submit-btn {
+	width: 379px;
+	height: 42px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+	background-color: #146C94;
+	box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	margin-top: 30px;
+	transition: 0.3s;
+}
+
+.submit-btn:hover {
+	background-color: #16566e;
+	cursor: pointer;
+}
+
+/* Add this to your existing styles */
+.submit-btn:disabled:hover {
+    cursor: not-allowed;
+    background-color: initial; /* You can set it to the default background color or any other color you prefer */
+    color: initial; /* You can set it to the default text color or any other color you prefer */
+    border-color: initial; /* You can set it to the default border color or any other color you prefer */
+    box-shadow: none; /* You can set it to the default box shadow or any other box shadow you prefer */
+}
+
+.call-to-action {
+	text-align: center;
+	font-size: 17px;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.cta-link {
+	color: #1B8EC1;
+	text-decoration: none;
+}
+
+.box-2 {
+	position: absolute;
+	top: 0;
+	right: 0;
+	flex: 1;
+	float: right;
+	/*border: 1px solid black;*/
+	width: 53%;
+	height: 100%;
+}
+
+.layer-box {
+	width: 100%;
+	height: 600px;
+	background-color: #A1CCD1;
+	border-radius: 30px 0 0 30px;
+	margin-top: 30px;
+	box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.20);
+}
+
+.quotation-box {
+	height: auto;
+	width: 68%;
+	/*border: 1px solid black;*/
+	padding-top: 30px;
+	padding-left: 30px;
+	position: relative;
+	z-index: 2;
+
+}
+
+.quotation-text {
+	font-family: 'Bitter', serif;
+	font-weight: 600;
+}
+.quotation-source {
+	color: #146C94;
+	font-weight: 700;
+}
+
+.box-2__vector {
+	position: absolute;
+    top: 0; 
+    left: 0;
+    width: 90%;
+    height: 85%;
+    z-index: 1;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.logo {
+	width: auto;
+	height: auto;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 410px;
+}
+
+@media (width <= 600px) {
+	.heading {
+		font-size: 24px;
+		width: 200px;
+		line-height: 35px;
+		margin-top: 150px;
+	}
+	.white-box {
+		margin-left: 40%;
+	}
+}
+@media (max-width: 800px) {
+    .box-1 {
+        width: 100%;
+    }
+
+    .box-2 {
+        display: none;
+    }
+}
